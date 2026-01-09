@@ -1,0 +1,8 @@
+period_id,label,start_year,end_year,sort_order
+p_apostolic,Apostolic,30,110,10
+p_patristic,Patristic,110,750,20
+p_byzantine,Byzantine,750,1453,30
+p_early_modern,Early Modern,1453,1789,40
+p_industrial,Industrial,1789,1945,50
+p_coldwar,Cold War,1945,1991,60
+p_postmodern,Postmodern/Contemporary,1991,2100,70

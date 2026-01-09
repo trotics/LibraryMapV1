@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Library Schematic</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+  <div id="app">
+    <header>
+      <div class="title">Library Schematic</div>
+      <div class="subtitle">Version 1.0 — All tags are <b>AI-provisional</b> (status=review). Use CSV edits to revise.</div>
+    </header>
+
+    <aside id="controls">
+      <div class="panel">
+        <h3>Filters</h3>
+
+        <label class="row">
+          <span>Cluster</span>
+          <select id="clusterSelect"></select>
+        </label>
+
+        <div class="block">
+          <div class="label">Institutions</div>
+          <div id="instChecks" class="checks"></div>
+        </div>
+
+        <div class="block">
+          <div class="label">Chronology layer</div>
+          <div class="row">
+            <label><input type="radio" name="chrono" value="produced" checked> Produced-in</label>
+            <label><input type="radio" name="chrono" value="analyzes"> Analyzes-period</label>
+          </div>
+          <label class="row small">
+            <input type="checkbox" id="anchoredOnly" disabled>
+            Show only books with analyzesPeriods
+          </label>
+        </div>
+
+        <div class="block">
+          <div class="label">Timeline (accumulative)</div>
+          <input id="timeSlider" type="range" min="0" max="6" value="6"/>
+          <div class="small" id="timeLabel"></div>
+        </div>
+
+        <div class="block">
+          <div class="label">Search</div>
+          <input id="searchBox" type="text" placeholder="title / author"/>
+        </div>
+
+        <div class="block">
+          <div class="label">View</div>
+          <label class="row small"><input type="checkbox" id="showLabels" checked> Labels</label>
+        </div>
+      </div>
+
+      
+      <div class="panel" id="legend">
+        <h3>Legend</h3>
+        <div class="legend-item">
+          <span class="dot cluster"></span>
+          <span>Book (color = cluster)</span>
+        </div>
+        <div class="legend-item">
+          <span class="line thin"></span>
+          <span>Weak relation (thematic)</span>
+        </div>
+        <div class="legend-item">
+          <span class="line medium"></span>
+          <span>Moderate relation</span>
+        </div>
+        <div class="legend-item">
+          <span class="line thick"></span>
+          <span>Strong relation (author / core topic)</span>
+        </div>
+        <div class="legend-note">
+          All relations are AI-provisional and reviewable.
+        </div>
+      </div>
+
+      <div class="panel" id="details">
+        <h3>Selection</h3>
+        <div class="small">Click a node.</div>
+        <div id="detailsBody"></div>
+      </div>
+    </aside>
+
+    <main id="viz">
+      <svg id="svg"></svg>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+inst_id,inst_name,inst_description,ring_order
+inst_unknown,Unknown/Unassigned,Temporary holding category for items awaiting institutional mapping.,0
+inst_church,Church,Liturgical-sacramental body and ecclesial governance.,10
+inst_state,State,"Civil authority, law, administration, sovereignty.",20
+inst_academy,Academy,"Universities, research, intellectual class formation.",30
+inst_economy,Economy,"Markets, capital, labor organization.",40
+inst_media,Media,"Mass communication, propaganda, narrative production.",50
+inst_tech,Technology,"Tools, infrastructure, cybernetics, systems control.",60
+inst_culture,Culture/Arts,"Literature, aesthetics, and cultural formation.",70
+inst_security,Security/Intelligence,"Military, intelligence, policing, covert operations.",80

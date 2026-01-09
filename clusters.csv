@@ -1,0 +1,22 @@
+cluster_id,cluster_name,cluster_description,parent_cluster_id,default_institutions,sort_order
+cl_unassigned,Unassigned,Temporary holding cluster for items awaiting curation.,,inst_unknown,0
+cl_scripture_method,"Scripture: Canon, Hermeneutics & Biblical Studies","Canon formation, textual criticism, historical criticism, hermeneutics.",,inst_church|inst_academy,100
+cl_patristics_dogma,Patristics & Dogmatic Foundations,"Fathers, councils, early doctrinal development and polemics.",,inst_church|inst_academy,120
+cl_byz_theo,Byzantine Theology & Hesychasm,"Byzantine dogmatics, Palamas, deification, essence-energies.",cl_patristics_dogma,inst_church|inst_academy,130
+cl_liturgy_icons,"Liturgy, Sacraments & Iconology","Liturgical theology, rites, icon defense and meaning.",,inst_church|inst_academy,150
+cl_spirituality_ascetic,"Asceticism, Prayer & Spiritual Warfare","Monastic praxis, prayer, spiritual struggle, hagiography.",,inst_church,170
+cl_church_history_schism,"Church History, Schism & East–West Controversies","Papacy/Filioque debates, schisms, historical ecclesiology.",,inst_church|inst_academy,190
+cl_classical_antiquity,Classical Antiquity: Greek/Roman Culture & Philosophy,"Paideia, classical culture, ancient intellectual background.",,inst_academy|inst_culture,210
+cl_phil_modern,Modern Philosophy & Critical Theory,"Epistemology, phenomenology, Frankfurt School, modern theory.",,inst_academy,230
+cl_phil_political_theology,Political Theology & Metahistory,"Civilizational narratives, political theology, philosophy of history.",,inst_academy|inst_state,250
+cl_literature_modern,Literature & Imagination (Modern/Classic),Novels and imaginative literature shaping moral imagination.,,inst_culture,270
+cl_science_faith,"Science, Faith & Metaphysics of Nature","Science-theology dialogue, cosmology, philosophy of science.",,inst_academy|inst_tech,300
+cl_evolution_design,"Origins Debate: Evolution, Design & Critiques","Darwinism critiques, intelligent design, philosophy of evolution.",cl_science_faith,inst_academy,320
+cl_psych_anthro,"Personhood, Psychology & Anthropology","Mind, person, emotions, psychology in dialogue with faith.",,inst_academy|inst_church,340
+cl_gnosticism_esotericism,"Gnosticism, Esotericism & Alternative Religiosity","Gnosis studies, esotericism, occult currents and critiques.",,inst_academy|inst_culture,360
+cl_geopolitics_intel,"Geopolitics, Intelligence & Covert Power","MI6/CIA, covert programs, geopolitical strategy and operations.",,inst_state|inst_security,400
+cl_elites_networks,"Elites, Networks & Institutional Capture","Bilderberg, foundations, elite networks, institutional coordination.",,inst_state|inst_economy|inst_security,420
+cl_propaganda_psyops,"Propaganda, Psychological Warfare & Media Systems","Mass persuasion, psyops, narrative manufacture.",,inst_media|inst_state|inst_security,440
+cl_political_economy,Political Economy & Markets,"Economics, market theory, crises, state-market relations.",,inst_economy|inst_state,460
+cl_modernity_critique,"Critiques of Modernity, Progress & Technology","Anti-progress, anti-technocracy, critiques of modern development.",,inst_culture|inst_academy|inst_tech,480
+cl_future_tech,"Futures, Transhumanism & Technological Governance","Transhumanism, future narratives, techno-governance.",,inst_tech|inst_state|inst_academy,500
